@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suprimentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    
+    <nav class="navbar__modulos">
+        <div class="goldman-regular modulo">Suprimentos</div>
+        <div class="bt__exitNavbar">
+            <button class="exit-button">
+                <img src="{{ url_for('static', filename='image/icons8-sair-96.png') }}" alt="Exit Icon">
+            </button>
+        </div>
+    </nav>
+    <div class="slidebar">
+        <button class="menu-toggle">☰</button> <!-- Botão sanduíche -->
+        <div class="menu-item">
+            <a href="#">Cadastro de fornecedores</a>
+            <div class="submenu">
+                <a href="#">Novo fornecedor</a>
+                <a href="#">Listar fornecedores</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Pedidos de compra</a>
+            <div class="submenu">
+                <a href="#">Novo pedido</a>
+                <a href="#">Histórico de pedidos</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Controle de estoque</a>
+            <div class="submenu">
+                <a href="#">Entrada de estoque</a>
+                <a href="#">Saída de estoque</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Cotação de preços</a>
+            <div class="submenu">
+                <a href="#">Solicitar cotação</a>
+                <a href="#">Comparar cotações</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Entrada e saída</a>
+            <div class="submenu">
+                <a href="#">Entrada de mercadorias</a>
+                <a href="#">Saída de mercadorias</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Relatórios e dashboards</a>
+            <div class="submenu">
+                <a href="#">Gerar relatório</a>
+                <a href="#">Visualizar dashboard</a>
+            </div>
+        </div>
+        <div class="bt__exitNavbar">
+            <button class="exit-button">
+                <img src="{{ url_for('static', filename='image/icons8-sair-96.png') }}" alt="Exit Icon">
+            </button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
